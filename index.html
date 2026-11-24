@@ -1,14 +1,20 @@
+
 <!doctype html>
 <html lang="th">
 <head>
-<meta charset="UTF-8" />
-<link href="/src/style.css" rel="stylesheet">
-<style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+
+    <style>
         nav {
             background-color: #31520e;
             padding: 15px;
             display: flex;
             gap: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
         }
 
         nav a {
@@ -22,14 +28,19 @@
         }
     </style>
 </head>
-<body class="bg-purple-200 flex-col flex items-center justify-center text-center ">
-<nav class="flex gap-6 bg-lime-900 p-4 w-full text-white  ">
-<a href="#/ ">หน้าแรก</a>
-<a href="#/admin">แอดมิน</a>
-<a href="#/about">เกี่ยวกับ</a>
-<a href="#/contact">ติดต่อ</a>
-</nav>
-<main id="app" class="p-6"></main>
-<script type="module" src="/src/main.js"></script>
+
+<body class="bg-purple-200 flex flex-col text-center">
+
+    <nav>
+        <a href="#/">หน้าแรก</a>
+        <a href="#/admin">แอดมิน</a>
+        <a href="#/about">เกี่ยวกับ</a>
+        <a href="#/contact">ติดต่อ</a>
+    </nav>
+
+    <main id="app" class="p-6"></main>
+
+    <script type="module" src="/src/main.js"></script>
+
 </body>
 </html>
